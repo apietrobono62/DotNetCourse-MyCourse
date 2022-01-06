@@ -22,6 +22,7 @@ namespace Mycourse
         {
             if (env.IsDevelopment())
             {
+                // è sempre meglio che questo middelware sia il primo
                 app.UseDeveloperExceptionPage(); // produce una pagina informativa nel caso in cui dovesse prodursi un errore
             }
             app.UseStaticFiles(); //middelware che si occupa di caricare i file statici in wwwroot
